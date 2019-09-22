@@ -374,7 +374,7 @@ whether `history-window-local-history' is true or false."
     (set-window-buffer (history-window) buffer)
     (set-buffer buffer)
     ;; Update window-start.
-    (set-window-start nil wpos)
+    (set-window-start nil wpos 'noforce)
     ;; Update point.
     (goto-char pos)))
 
